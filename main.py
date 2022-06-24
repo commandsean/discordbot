@@ -328,5 +328,5 @@ async def 이스터에그(ctx):
         await ctx.send(embed = discord.Embed(title="이스터에그", description = "사실 수철쌤은 가발을 쓰고 계신게 아니였을까?", color = 0x00ff00))
 
             
-access_token = os.environ["BOT_TOKEN"]
+access_token = os.environ['BOT_TOKEN']
 bot.run(access_token)
