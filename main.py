@@ -1,4 +1,5 @@
 import discord
+import os
 from discord.ext import commands
 from youtube_dl import YoutubeDL
 import time
@@ -327,5 +328,5 @@ async def 이스터에그(ctx):
         await ctx.send(embed = discord.Embed(title="이스터에그", description = "사실 수철쌤은 가발을 쓰고 계신게 아니였을까?", color = 0x00ff00))
 
             
-
-bot.run('OTg4NDUwOTA3MjE5OTcyMTg5.GTdMug.3PCYHCApZvwoG9R7Hvwn0sEzr5hcxzQV6nT5CY')
+access_token = os.environ["BOT_TOKEN"]
+bot.run(access_token)
